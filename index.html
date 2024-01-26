@@ -260,6 +260,42 @@
             }
         });
     });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('survey-form');
+
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
+
+      // Collect form data
+      const formData = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        request: document.getElementById('request').value,
+      };
+
+      // Send form data to Cloudflare Worker
+      await fetch('/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      // You can add additional logic here, such as showing a success message to the user
+    });
+  });
+
+  function restrictToNumbers(event) {
+    const input = event.target;
+    input.value = input.value.replace(/[^0-9]/g, '');
+  }
+
+
 </script>
     
     
