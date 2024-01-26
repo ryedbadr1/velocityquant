@@ -12,8 +12,13 @@ async function handleRequest(request) {
     // Handle saving the form data to Cloudflare Workers KV
     await saveFormData(formData);
 
-    return new Response('Form data saved successfully!', { status: 200 });
-  }
+    return new Response(null, {
+        status: 302,
+        headers: {
+          'Location': '/thankyou.html',
+        },
+      });  
+    }
 
   return new Response('Invalid request', { status: 400 });
 }
