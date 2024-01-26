@@ -1,0 +1,113 @@
+/* Reset CSS by Eric Meyer */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    background-color: #282424;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Sans", sans-serif;
+    font-size: 1.5vw;
+    padding-left: 0;
+    height: 90px;
+
+    
+
+    @media (max-width: 840px) {
+        height: 74px;
+
+        font-size: 2.1vw; /* Decrease image height as browser width decreases */
+    }
+
+    @media (max-width: 500px) {
+        height: 54px;
+
+        font-size: 2.1vw; /* Decrease image height as browser width decreases */
+    }
+
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+
+    @media (max-width: 840px) {
+        padding-right: 8px; /* Decrease image height as browser width decreases */
+    }
+}
+
+
+.bar-item{
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media (max-width: 840px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+.image-container {
+    max-width: 7vw; /* Image will not exceed the width of its parent container */
+    padding-right: 15px;
+
+    @media (max-width: 840px) {
+        max-width: 13vw; /* Decrease image height as browser width decreases */
+        padding-right: 5px;
+    }
+}
+
+.image {
+    width: 100%; /* Image will take up 100% of its parent container's width */
+    height: auto; /* Maintain the aspect ratio and prevent distortion */
+    padding-top: 10px;
+    padding-bottom: 6px;
+
+
+}
+
+
+
+
+
+
+
+a:active,
+a:focus {
+    outline: none; /* Remove outline */
+}
+
+a {
+    color: white; /* Change to the color you want */
+    text-decoration: none; /* Remove default underline */
+}

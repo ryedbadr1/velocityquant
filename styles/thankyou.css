@@ -1,0 +1,134 @@
+/* Reset CSS by Eric Meyer */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+.total{
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+
+.second-box{
+
+    flex-grow: 1;
+    color: white;
+    background-image: linear-gradient(
+    0,
+    #282424 0%,
+    #282424 50%,
+    rgb(31, 51, 78) 80%,
+    rgb(33, 53, 81) 100%
+    );
+
+    justify-content: space-between;
+    font-family: "Sans", sans-serif;
+
+    /*Offsets for the header */
+    margin-top: 90px;
+    @media (max-width: 840px) {
+        margin-top: 74px;
+    }
+
+    @media (max-width: 500px) {
+        margin-top: 54px;
+    }
+
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.secnod-box-words{
+    flex: 3;
+    text-align: center; /* Center-align text content */
+    margin-left: 4vw;
+    margin-right: 4vw;
+
+}
+
+.second-box-header{
+    text-align: center;
+    font-weight: 100;
+    font-size: 5vw;
+    margin-bottom: 8vh;
+    margin-top: 15vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+
+
+    @media (max-width: 840px) {
+        font-size: 7vw;
+        margin-top: 10vh;
+
+    }
+}
+
+
+.second-box-text{
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.5svw;
+    font-family: "Product Sans Thin";
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    @media (max-width: 840px) {
+        font-size: 3vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+}
+
+
+
+
+.second-box-image{
+    flex: 1;
+
+    width: 15vw;
+    @media (max-width: 840px) {
+        width: 20vw; /* Decrease image height as browser width decreases */
+        display: none;
+    };
+    
+    height: auto;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+}
+
+
+
+.second-box-image-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.third-box{
+    border-top: 1.5px solid #3e3939;
+
+}

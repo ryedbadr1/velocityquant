@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/bottom.css">
+
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/d99727ec3d6d11e487cbba7a0acffc84?family=Core+Sans+E+W01+75+ExtraBold">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/952bab25f6798d6bb1937d67e9bee4dd?family=Sans">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/5719adfbee8edfbb73d99a70e46fd4f8?family=Product+Sans+Thin">
+    <style>
+        body {
+            background-color: #282424;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="first-box">
+        <div class="header">
+    
+            <div class="left">
+                <div class="image-container">
+                    <img src="images/homePage/veloLogo.png" class="image" alt="Logo">
+                </div>
+                    <a href="/" class="vqtg">
+                        <span class="text-container">VELOCITY QUANT</span><br>
+                        <span class="text-container">TRADING GROUP</span>
+                    </a>
+            </div>
+        
+            <div class="right">
+        
+                <!--ADD SMOOTH SCROLLING-->
+                <a href="#fourth-box-target" class="bar-item scroll-link product-link">PRODUCT</a>
+                <a href="#seventh-box-target" class="bar-item scroll-link contact-link">CONTACT US</a>
+                <a href="about.html" class="bar-item">ABOUT US</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="second-box">
+        <div class="second-box-text">
+            AUTOMATED ALGORITHMIC <br> TRADING.
+        </div>
+        <img src="images/homePage/real_lines.png" class="second-box-image" alt="lines">
+    </div>
+
+
+    <div class="third-box">
+        <h1 class="third-box-header">
+            OUR MISSION
+        </h1>
+        <div class="third-box-text">
+            Integrate AI and our researched trading algorithms into the stock market to generate quick returns with minimal risk
+        </div>
+    </div>
+
+
+
+    <div class="fourth-box" id="fourth-box-target">
+
+        <img src="images/homePage/circlesCropped.png" class="fourth-box-image" alt="lines">
+
+        <div class="fourth-box-words">
+            <h1 class="fourth-box-header">
+                INNOVATING STRATEGIES FOR MARKET SUCCESS
+            </h1>
+
+            <div class="fourth-box-text">
+                We are dedicated to researching and developing cutting-edge 
+                trading strategies to help our clients maximize their success in 
+                the stock market. Our team of quants and researchers are constantly 
+                analyzing market trends, identifying patterns and refining our automated 
+                strategies. With a focus on innovation and efficiency, we are passionate about 
+                harnessing the power of technology to create strategies that are not only 
+                highly effective but also scalable and adaptable to a wide range of market 
+                conditions. At Velocity Quant Trading Group, we are committed to providing our 
+                clients with the highest level of support, and to helping them achieve long-term 
+                success and growth.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fifth-box">
+        <div class="fifth-box-words">
+            <h1 class="fifth-box-header">
+                WHY VELOCITY QUANT?
+            </h1>
+
+            <div class="fifth-box-text">
+                At Velocity Quant Trading Group, we engineer our trading 
+                algorithms to be safe and effective. We have integrated AI into our 
+                work, constantly optimizing our trading strategies. We are dedicated 
+                to beating the S&P 500 standard while putting more of the 
+                consumer's money back in their own pockets. By that, we mean that a 
+                typical quant fund will have a 2% management fee and a 20% performance fee. 
+                However, at Velocity Quant, we only charge a 10% performance fee on profits.
+
+            </div>
+        </div>
+
+            <img src="images/homePage/barGraphCropped.png" class="fifth-box-image" alt="lines">
+
+
+    </div>
+
+
+    <div class="sixth-box">
+        <div class="sixth-box-image">
+            <img src="images/homePage/cloudsCropped.png" class="sixth-box-image" alt="lines">
+        </div>
+
+        <div class="sixth-box-words">
+            <h1 class="sixth-box-header">
+                OUR APPROACH
+            </h1>
+
+            <div class="sixth-box-text">
+                <ul class="list">
+                    <li class="list-item">Fundamental Investing</li>
+                    <li class="list-item">Artificial Intelligence</li>
+                    <li class="list-item">Relentless Testing</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="seventh-box" id="seventh-box-target">
+        <div class="seventh-box-image-left">
+            <img src="images/homePage/twoShapesCropped.png" class="sixth-box-image" alt="lines">
+        </div>
+        
+        <div class="seventh-box-middle">
+            <div class="seventh-box-words-top">
+                <h1 class="seventh-box-header">
+                    CONTACT US
+                </h1>
+
+                <div class="seventh-box-text-para">
+                    Note: We are currently limiting early investors. 
+                    However, if you would like early access please fill out 
+                    the form below.
+                </div>
+            </div>
+
+            <div class="seventh-box-text-cap">
+                How Can We Help?
+            </div>
+
+            <form id="survey-form" method="POST" action="/">
+                
+                <div class="row">
+
+                    <div class="box">
+                        <label for="firstName"></label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="First Name*">
+                    </div>
+
+                    <div class="box">
+                        <label for="lastName"></label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Last Name*">
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="box">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" placeholder="Email Address *">
+                    </div>
+
+                    <div class="box">
+                        <label for="phone"></label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Phone Number">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                <div class="box">
+                    <label for="request"></label>
+                    <input type="amt" id="request" name="request" placeholder="Input Investment Request (USD)" oninput="restrictToNumbers(event)"></input>
+                </div>
+                </div>
+                <div class="row">
+                <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="seventh-box-image-right">
+            <img src="images/homePage/threeShapesCropped.png" class="sixth-box-image" alt="lines">
+        </div>
+
+    </div>
+
+
+
+    <div class="eight-box">
+        <div class="footer">
+    
+            <div class="left">
+                <div class="image-container">
+                    <img src="images/homePage/veloLogo.png" class="image" alt="Logo">
+                </div>
+                    <a href="/" class="vqtg">
+                        <span class="text-container">VELOCITY QUANT</span><br>
+                        <span class="text-container">TRADING GROUP</span>
+                    </a>
+            </div>
+        
+            <div class="right_b">
+                <div class="top_b">
+                    <img src="images/homePage/email5.png" class="image_tb" alt="Email">
+                    <span class="right_b-text">velocityquant@gmail.com</span>
+        
+                </div>
+        
+                <div class="bottom_b">
+                    <img src="images/homePage/LinkedIn3.png" class="image_bb" alt="Linkedin">
+                    <a href="https://www.linkedin.com/company/velocity-quant-trading-group/about" class = linkedInLink target="_blank">
+                        <span class="right_b-text">LinkedIn</span>
+                    </a>
+                </div>
+           </div>
+        </div>
+    </div>
+    
+
+
+
+
+<script>
+    // Add smooth scrolling to anchor links with the "scroll-link" class
+    document.querySelectorAll('.scroll-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1); // Remove the "#" symbol
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                // Calculate the target scroll position with an offset of 80 pixels
+                const offset = 75;
+                const targetPosition = targetElement.offsetTop - offset;
+
+                // Scroll to the target position
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth', // Smooth scroll behavior
+                });
+            }
+        });
+    });
+</script>
+    
+    
+</body>
+</html>

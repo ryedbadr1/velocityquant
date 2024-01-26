@@ -1,0 +1,264 @@
+/* Reset CSS by Eric Meyer */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.second-box{
+    display: flex;
+    color: white;
+
+    background-image: linear-gradient(
+    150deg,
+    #282424 0%,
+    #282424 50%,
+    rgb(31, 51, 78) 80%,
+    rgb(33, 53, 81) 100%
+    );
+
+    justify-content: space-between;
+    font-family: "Sans", sans-serif;
+
+    height: 35vw; /*35*/ 
+
+    @media (max-width: 840px) {
+        height: 45vw; /* Decrease image height as browser width decreases */
+    } /* 40 */
+
+
+    /*Offsets for the header */
+    margin-top: 80px;
+    @media (max-width: 840px) {
+        margin-top: 64px;
+    }
+
+    @media (max-width: 500px) {
+        margin-top: 54px;
+    }
+
+}
+
+.second-box-image{
+    margin-top: auto;
+    margin-bottom: 0;
+    border-bottom: 0;
+
+
+
+    height: 20vw;
+    margin-right: 0;
+
+    @media (max-width: 840px) {
+        height: 22vw; /* Decrease image height as browser width decreases */
+    }
+
+}
+
+.second-box-words{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    margin-right: auto;
+
+    @media (max-width: 840px) {
+        padding-right: 2vw;
+    }
+
+}
+
+.second-box-header {
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    font-size: 3.5vw;
+    font-weight: 400;
+
+    @media (max-width: 840px) {
+        font-size: 4.0vw;
+    }
+
+}
+
+.second-box-text {
+
+
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.47vw;
+    font-family: "Product Sans Thin";
+
+    @media (max-width: 840px) {
+        font-size: 1.8vw;
+    }
+}
+
+
+
+.third-box{
+    display: flex;
+    color: white;
+
+    background-color: #282424 ;
+
+    justify-content: space-between;
+    font-family: "Sans", sans-serif;
+
+
+    display: flex;
+    flex-direction: column;
+
+    height: auto; /*35*/ 
+    @media (max-width: 840px) {
+        height: auto; /* Decrease image height as browser width decreases */
+    } /* 40 */
+
+
+
+}
+
+
+.third-box-header{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 3.5vw;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 840px) {
+        font-size: 4.0vw;
+    }
+}
+
+
+
+.profiles-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* To evenly space profiles within each row */
+
+}
+
+.profile{
+    box-sizing: border-box; /* Include margin within max-width calculation */
+
+    margin-bottom: 4vw;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 33vw;
+    @media (max-width: 800px) {
+        width: 38vw;
+
+    }
+}
+
+.title{
+    text-align: center;
+    font-weight: 300;
+    font-size: 3vw;
+    margin: 1vw;
+
+    @media (max-width: 840px) {
+        font-size: 4vw;
+    }
+}
+
+.headshot{
+    margin-top: auto;
+    margin-bottom: 0;
+    border-bottom: 0;
+    margin-right: 0;
+
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%;
+
+    border-radius: 30px; /* Adjust the value to control the degree of rounding */
+    /*border: .7vw solid rgb(56, 85, 142);*/
+    box-shadow: 0 0 2vw rgba(30, 129, 190, 0.5); /* Adjust the color and spread as needed */
+
+
+    width: 25vw;
+    @media (max-width: 840px) {
+        width: 33vw; /* Decrease image height as browser width decreases */
+    }
+    height: auto;
+
+}
+
+.headshot-box{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.name{
+    text-align: center;
+    font-weight: 300;
+    font-size: 3vw;
+    margin: .5vw;
+
+    @media (max-width: 840px) {
+        font-size: 3vw;
+    }
+}
+
+.bio{
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.6vw;
+    font-family: "Product Sans Thin";
+
+
+    @media (max-width: 840px) {
+        font-size: 1.9vw;
+    }
+}
+
+.contact-info{
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.6vw;
+    font-family: "Product Sans Thin";
+
+
+    margin-top: 1vw;
+
+    @media (max-width: 840px) {
+        font-size: 1.7vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fourth-box{
+    border-top: 1.5px solid #3e3939;
+}

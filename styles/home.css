@@ -1,0 +1,595 @@
+/* Reset CSS by Eric Meyer */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+.first-box{
+    position: fixed; /* Make the first box fixed */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Position it at the left of the viewport */
+    right: 0; /* Position it at the right of the viewport */
+    background-color: rgba(40, 36, 36, 0.9); /* Add a background color with transparency */
+    z-index: 100; /* Set a high z-index to ensure it's above other elements */
+    /* Other styles for your first box */
+}
+
+
+
+.second-box{
+    display: flex;
+    color: white;
+    background-image: linear-gradient(160deg, #282424, #242b34);
+    justify-content: space-between;
+    font-family: "Sans", sans-serif;
+    align-items: center;
+    position: relative;
+
+
+    margin-top: 90px;
+    @media (max-width: 840px) {
+        margin-top: 74px;
+    }
+
+    
+    margin-top: 80px;
+    @media (max-width: 500px) {
+        margin-top: 54px;
+    }
+}
+
+.second-box-text{
+    font-size: 4vw;
+    padding-left: 4vw;
+    left: 0;
+
+    position: absolute;
+    z-index: 2;
+
+    @media (max-width: 840px) {
+        font-size: 3vw; /* Decrease image height as browser width decreases */
+    }
+}
+
+.second-box-image {
+    height: 30vw;
+    margin-left: auto;
+
+    @media (max-width: 840px) {
+        height: 25vw; /* Decrease image height as browser width decreases */
+    }
+}
+
+
+
+
+.third-box{
+    display: flex;
+    flex-direction: column;
+    color: white;   
+    justify-content: space-between;
+    font-family: "Sans", sans-serif;
+
+
+    height: 53vw;
+
+    @media (max-width: 840px) {
+        height: 68vw; /* Decrease image height as browser width decreases */
+    }
+
+
+    background-image: linear-gradient(
+    180deg,
+    #282424 0%,
+    #282424 30%,
+    rgb(26, 40, 58) 70%,
+    rgb(35, 52, 74) 100%
+);
+
+
+
+
+}
+
+.third-box-header {
+    text-align: center;
+    margin-top: 16vw;
+    font-size: 10vw;
+
+    @media (max-width: 840px) {
+        font-size: 8vw; /* Decrease image height as browser width decreases */
+        margin-top: 17vw;
+    }
+}
+
+.third-box-text {
+    text-align: center;
+    margin-bottom: 11vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2.6vw;
+    font-family: "Product Sans Thin";
+    
+    @media (max-width: 840px) {
+        margin-bottom: 22vw;
+        font-size: 2.5vw;
+    }
+}
+
+
+
+
+
+.fourth-box{
+    display: flex;
+    color: white;
+
+    background-image: linear-gradient(
+    205deg,
+    #282424 0%,
+    #282424 50%,
+    rgb(31, 51, 78) 70%,
+    rgb(33, 53, 81) 100%
+);
+
+
+    justify-content: space-between;
+    font-family: "Sans", sans-serif;
+
+
+    height: 30vw; /*35*/ 
+
+    @media (max-width: 840px) {
+        height: 35vw; /* Decrease image height as browser width decreases */
+    } /* 40 */
+}
+
+.fourth-box-image{
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+
+
+
+    height: 30vw;
+    margin-right: auto;
+
+    @media (max-width: 840px) {
+        height: 32vw; /* Decrease image height as browser width decreases */
+    }
+
+}
+
+.fourth-box-words{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fourth-box-header {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-size: 2.3vw;
+    font-weight: 600;
+
+    @media (max-width: 840px) {
+        font-size: 1.9vw;
+    }
+
+}
+
+.fourth-box-text {
+
+
+    text-align: left;
+    padding-right: 20px;
+    font-weight: 300;
+    font-size: 1.47vw;
+    font-family: "Product Sans Thin";
+
+    @media (max-width: 840px) {
+        font-size: 1.6vw;
+    }
+}
+
+
+
+
+.fifth-box{
+    display: flex;
+    color: white;
+
+    background-image: linear-gradient(
+    155deg,
+    #282424 0%,
+    #282424 60%,
+    rgb(31, 51, 78) 80%,
+    rgb(33, 53, 81) 100%
+);
+
+
+    justify-content: space-between;
+    font-family: "Sans", sans-serif;
+
+
+    height: 25vw; /*35*/ 
+
+    @media (max-width: 840px) {
+        height: 30vw; /* Decrease image height as browser width decreases */
+    } /* 40 */
+}
+
+.fifth-box-image{
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-bottom: 2vw;
+    padding-right: 2vw;
+    border-bottom: 0;
+
+
+
+    height: 22vw;
+    margin-right: auto;
+
+    @media (max-width: 840px) {
+        height: 24vw; /* Decrease image height as browser width decreases */
+    }
+
+}
+
+.fifth-box-words{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vw;
+    padding-right: 6vw;
+
+    @media (max-width: 840px) {
+        padding-right: 2vw;
+    }
+
+}
+
+.fifth-box-header {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-size: 2.5vw;
+    font-weight: 600;
+
+    @media (max-width: 840px) {
+        font-size: 2.1vw;
+    }
+
+}
+
+.fifth-box-text {
+
+
+    text-align: left;
+    padding-right: 20px;
+    font-weight: 300;
+    font-size: 1.47vw;
+    font-family: "Product Sans Thin";
+
+    @media (max-width: 840px) {
+        font-size: 1.6vw;
+    }
+}
+
+
+
+
+
+.sixth-box{
+    display: flex;
+    color: white;
+
+    background-image: linear-gradient(
+    205deg,
+    #282424 0%,
+    #282424 50%,
+    rgb(31, 51, 78) 80%,
+    rgb(33, 53, 81) 100%
+);
+
+    justify-content: space-between;
+    font-family: "Sans", sans-serif;
+
+    height: 25vw; /*35*/ 
+
+    @media (max-width: 840px) {
+        height: 30vw; /* Decrease image height as browser width decreases */
+    } /* 40 */
+}
+
+.sixth-box-image{
+    margin-top: auto;
+    margin-bottom: 0;
+    border-bottom: 0;
+
+
+
+    height: 22vw;
+    margin-right: 0;
+
+    @media (max-width: 840px) {
+        height: 24vw; /* Decrease image height as browser width decreases */
+    }
+
+}
+
+.sixth-box-words{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    margin-right: auto;
+
+    @media (max-width: 840px) {
+        padding-right: 2vw;
+    }
+
+}
+
+.sixth-box-header {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-size: 2.5vw;
+    font-weight: 600;
+
+    @media (max-width: 840px) {
+        font-size: 2.1vw;
+    }
+
+}
+
+.sixth-box-text {
+
+
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.47vw;
+    padding-left: 2vw;
+    font-family: "Product Sans Thin";
+
+    @media (max-width: 840px) {
+        font-size: 1.8vw;
+    }
+}
+
+.list-item{
+    margin-bottom: 2vw;
+}
+
+.seventh-box{
+    display: flex;
+    color: white;
+
+
+
+    background-image: linear-gradient(
+        155deg,
+        #282424 0%,
+        #282424 60%,
+        rgb(31, 51, 78) 80%,
+        rgb(33, 53, 81) 100%
+    );
+}
+
+.seventh-box-words-top{
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+    font-family: "Sans", sans-serif;
+
+    @media (max-width: 840px) {
+
+        padding-top: 8px; /* Decrease image height as browser width decreases */
+    }
+
+}
+
+.seventh-box-text-para{
+    flex: 1; /* Equal flex value for both boxes */
+    font-size: 1.5vw;
+    font-weight: 100;
+
+    font-family: "Product Sans Thin";
+
+    @media (max-width: 840px) {
+
+        font-size: 1.8vw; /* Decrease image height as browser width decreases */
+    }
+
+}
+
+.seventh-box-text-cap{
+    font-size: 1.5vw;
+    font-weight: 100;
+    
+    font-family: "Product Sans Thin";
+    padding-bottom: 3vw;
+    padding-left: 3vw;
+    
+
+    @media (max-width: 840px) {
+        padding-bottom: 1.5vw;
+
+        font-size: 1.8vw; /* Decrease image height as browser width decreases */
+    }
+
+}
+
+.seventh-box-header{
+    flex: 1;
+    font-size: 4vw;
+    font-weight: 500;
+    padding-left: 3vw;
+
+    
+    @media (max-width: 840px) {
+
+        font-size: 3.5vw; /* Decrease image height as browser width decreases */
+    }
+}
+
+
+
+
+.seventh-box-image-left{
+
+    margin-top: 10px;
+    margin-right: auto;
+    padding-left: 3vw;
+
+
+    height: 25vw;
+    @media (max-width: 840px) {
+        height: 24vw; /* Decrease image height as browser width decreases */
+    }
+}
+
+.seventh-box-image-right{
+    margin-top: 10px;
+    margin-left: auto;
+    padding-right: 3vw;
+
+
+    height: 25vw;
+    @media (max-width: 840px) {
+        height: 24vw; /* Decrease image height as browser width decreases */
+    }
+}
+
+
+
+/* Apply these CSS styles to remove background and add bottom border */
+form {
+    background: transparent; /* Remove the background color */
+    max-width: 100%; /* Adjust the maximum width as needed */
+    padding-left: 3vw;
+
+  /*  display: flex;
+    flex-direction: vertical;*/
+}
+
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add some space between labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="amt"]
+ {
+    width: 100%; /* Make the input elements take full width */
+    border: none; /* Remove the default input border */
+    border-bottom: 1px solid #ffffff; /* Add a bottom border */
+    margin-bottom: 15px; /* Add spacing between input elements */
+    background: transparent; /* Remove background color */
+    outline: none; /* Remove the outline on focus */
+    height: 3vw;
+    color: rgb(192, 190, 190);
+    font-size: 2vw;
+
+
+    @media (max-width: 840px) {
+        margin-bottom: 2px;
+        padding-bottom: 3px;
+        height: 3vw;
+
+    }
+}
+
+input:-internal-autofill-selected {
+    background-color: transparent !important; /* Set the background color to transparent */
+    color: rgb(192, 190, 190) !important; /* Set the text color to your desired color */
+    /* Add any other styles you want to apply */
+}
+
+
+
+
+/* Style the submit button as needed */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: .9vw 4.5vw;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1vw;
+    margin-bottom: 40px;
+    font-size: 1.6vw;
+
+
+
+    @media (max-width: 840px) {
+        margin-top: 2vw;
+        margin-bottom: 20px;
+        padding: 1vw 4.5vw;
+        font-size: 2vw;
+
+    }
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+::placeholder{
+    color: rgb(192, 190, 190);
+    font-size: 1.3vw;
+
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-left: 3vw;
+
+    @media (max-width: 840px) {
+        margin-bottom: 5px;
+    }
+}
+
+
+.box{
+    flex: 1;
+    padding-right: 4vw; /* Add spacing between boxes */
+
+}
+
+
+@media (max-width: 840px) {
+        
+    ::placeholder{
+        font-size: 1.6vw;
+    }
+
+}
+
+
+
+
+

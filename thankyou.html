@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/bottom.css">
+
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/d99727ec3d6d11e487cbba7a0acffc84?family=Core+Sans+E+W01+75+ExtraBold">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/952bab25f6798d6bb1937d67e9bee4dd?family=Sans">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/5719adfbee8edfbb73d99a70e46fd4f8?family=Product+Sans+Thin">
+</head>
+<body>
+
+    <div class="total">
+    <div class="first-box">
+        <%- include('templates/header.ejs'); %>
+    </div>
+
+
+    <div class="second-box" >
+
+        <div class="second-box-image-container">
+            <img src="/images/homePage/twoShapesCropped.png" class="second-box-image" alt="lines">
+        </div>
+        
+        <div class="second-box-words">
+            <h1 class="second-box-header">
+                Thank You For Contacting Us.
+            </h1>
+
+            <div class="second-box-text">
+                Thank you for your interest in Velocity Quant Trading Group,
+                 you will be contacted in the next few days if we approve your request.
+            </div>
+        </div>  
+
+        <div class="second-box-image-container">
+            <img src="/images/homePage/threeShapesCropped.png" class="second-box-image" alt="lines">
+        </div>
+
+    </div>
+
+
+    <div class="third-box">
+        <%- include('templates/bottom.ejs'); %>
+    </div>
+    </div>
+
+</body>
