@@ -85,6 +85,14 @@
         </div>
     </div>
 
+    <div class = "https://thechicagojournal.com/velocity-quant-trading-group-college-students-innovate-finance-through-ai/"> </div>
+    <div class = "https://thechicagojournal.com/velocity-quant-trading-group-college-students-innovate-finance-through-ai/"> </div>
+    <div class = "https://thechicagojournal.com/velocity-quant-trading-group-college-students-innovate-finance-through-ai/"> </div>
+    <div class = "https://thechicagojournal.com/velocity-quant-trading-group-college-students-innovate-finance-through-ai/"> </div>
+    <div class = "https://thechicagojournal.com/velocity-quant-trading-group-college-students-innovate-finance-through-ai/"> </div>
+    <div class = "https://thechicagojournal.com/velocity-quant-trading-group-college-students-innovate-finance-through-ai/"> </div>
+    <div class = "https://thechicagojournal.com/velocity-quant-trading-group-college-students-innovate-finance-through-ai/"> </div>
+    <div class = "https://thechicagojournal.com/velocity-quant-trading-group-college-students-innovate-finance-through-ai/"> </div>
 
     <div class="fifth-box">
         <div class="fifth-box-words">
@@ -154,7 +162,7 @@
                 How Can We Help?
             </div>
 
-            <form id="survey-form" method="POST" action="/thankyou">
+            <form id="survey-form" method="POST" action="#">
                 
                 <div class="row">
 
@@ -186,7 +194,7 @@
                 <div class="row">
                 <div class="box">
                     <label for="request"></label>
-                    <input type="amt" id="request" name="request" placeholder="Input Investment Request (USD)" oninput="restrictToNumbers(event)"></input>
+                    <input type="amt" id="request" name="request" placeholder="Input Investment Request (USD)"></input>
                 </div>
                 </div>
                 <div class="row">
@@ -261,13 +269,9 @@
     });
 
 
-    document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('survey-form');
-
-    form.addEventListener('submit', async function (event) {
+    document.getElementById('survey-form').addEventListener('submit', async function(event) {
         event.preventDefault();
 
-        // Collect form data
         const formData = {
             firstName: document.getElementById('firstName').value,
             lastName: document.getElementById('lastName').value,
@@ -275,20 +279,25 @@
             phone: document.getElementById('phone').value,
             request: document.getElementById('request').value,
         };
+        console.log(formData);
 
-        // Send form data to Cloudflare Worker
-        await fetch('/submit-form', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
+        await fetch('/submit', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formData),
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.text(); // Change to text() to handle HTML content
+})
+.then(data => console.log(data))
+.catch(error => console.error('Error during fetch:', error));
+
         });
-
-        // Redirect to thankyou.html after successful form submission
-        window.location.href = '/thankyou';
-    });
-});
 
 
 
